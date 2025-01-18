@@ -1,0 +1,12 @@
+diff --git a/io.github.najepaliya.kleaner.desktop b/io.github.najepaliya.kleaner.desktop
+index a9e2f16..a3d5e82 100644
+--- a/io.github.najepaliya.kleaner.desktop
++++ b/io.github.najepaliya.kleaner.desktop
+@@ -6,4 +6,5 @@ Exec=kleaner
+ Icon=io.github.najepaliya.kleaner
+ Type=Application
+ Terminal=false
+-Categories=Qt;KDE;
+\ No newline at end of file
++Keywords=Qt;KDE;
++Categories=Office;Utility;
