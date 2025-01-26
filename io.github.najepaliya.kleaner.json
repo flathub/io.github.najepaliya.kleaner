@@ -1,9 +1,20 @@
 {
     "id": "io.github.najepaliya.kleaner",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-22.08",
+    "runtime-version": "5.15-24.08",
     "sdk": "org.kde.Sdk",
     "command": "kleaner",
+    "add-extensions": {
+        "org.freedesktop.Platform.ffmpeg-full": {
+            "directory": "lib/ffmpeg",
+            "version": "24.08",
+            "add-ld-path": ".",
+            "no-autodownload": false
+        }
+    },
+    "cleanup-commands": [
+        "mkdir -p /app/lib/ffmpeg"
+    ],
     "finish-args": [
         "--device=dri",
         "--share=ipc",
@@ -102,6 +113,12 @@
                     "type": "archive",
                     "url": "https://github.com/najepaliya/kleaner/archive/refs/tags/v1.0.tar.gz",
                     "sha256": "c0ef8fef18f91d496e3383845ef0061a9fbccb6ed0ac3ed82ddb78c2ebc7f5c2"
+                },
+                {   "type": "patch",
+                    "path": "fix-appdata.patch"
+                },
+                {   "type": "patch",
+                    "path": "fix-desktop.patch"
                 }
             ]
         }
