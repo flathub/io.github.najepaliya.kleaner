@@ -93,8 +93,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/24.12.1/src/libkexiv2-24.12.1.tar.xz",
-                    "sha256": "b8e051a1c69c2717d47841eaf81d2be561c3a95cffc6749270e56e0912e9771c",
+                    "url": "https://download.kde.org/stable/release-service/24.12.3/src/libkexiv2-24.12.3.tar.xz",
+                    "sha256": "31b8aa103ea0d4d58fc5f1f9517229baf0ab6d02519105ad27205fc1cfc16411",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
@@ -114,10 +114,12 @@
                     "url": "https://github.com/najepaliya/kleaner/archive/refs/tags/v1.0.tar.gz",
                     "sha256": "c0ef8fef18f91d496e3383845ef0061a9fbccb6ed0ac3ed82ddb78c2ebc7f5c2"
                 },
-                {   "type": "patch",
+                {
+                    "type": "patch",
                     "path": "fix-appdata.patch"
                 },
-                {   "type": "patch",
+                {
+                    "type": "patch",
                     "path": "fix-desktop.patch"
                 }
             ]
