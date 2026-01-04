@@ -1,22 +1,21 @@
 diff --git a/io.github.najepaliya.kleaner.appdata.xml b/io.github.najepaliya.kleaner.appdata.xml
-index c9b9c2e..8e56200 100644
+index c9b9c2e..78e508d 100644
 --- a/io.github.najepaliya.kleaner.appdata.xml
 +++ b/io.github.najepaliya.kleaner.appdata.xml
-@@ -12,17 +12,20 @@
+@@ -12,18 +12,20 @@
      <provides>
          <binary>kleaner</binary>
      </provides>
 -    <project_group>KDE</project_group>
      <url type="homepage">https://github.com/najepaliya/kleaner</url>
      <url type="bugtracker">https://github.com/najepaliya/kleaner/issues</url>
++    <url type="vcs-browser">https://github.com/najepaliya/kleaner</url>
      <releases>
          <release version="1.0" date="2023-09-30"/>
      </releases>
 -    <developer_name>Neel Jepaliya</developer_name>
 +    <developer id="io.github.najepaliya">
-+        <name>
-+            Neel Jepaliya
-+        </name>
++        <name>Neel Jepaliya</name>
 +    </developer>
      <screenshots>
          <screenshot type="default">
@@ -25,4 +24,11 @@ index c9b9c2e..8e56200 100644
 +            <image type="source" width="630" height="1036">https://raw.githubusercontent.com/najepaliya/kleaner/be41947d84dccd7f5c28366174c6446e13febafb/screenshot.png</image>
          </screenshot>
      </screenshots>
-     <content_rating type="oars-1.0"/>
+-    <content_rating type="oars-1.0"/>
+-</component>
+\ No newline at end of file
++    <content_rating type="oars-1.1"/>
++</component>
+--
+libgit2 1.7.2
+
