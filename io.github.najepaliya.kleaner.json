@@ -1,26 +1,21 @@
 {
     "id": "io.github.najepaliya.kleaner",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-24.08",
+    "runtime-version": "5.15-25.08",
     "sdk": "org.kde.Sdk",
     "command": "kleaner",
-    "add-extensions": {
-        "org.freedesktop.Platform.ffmpeg-full": {
-            "directory": "lib/ffmpeg",
-            "version": "24.08",
-            "add-ld-path": ".",
-            "no-autodownload": false
-        }
-    },
-    "cleanup-commands": [
-        "mkdir -p /app/lib/ffmpeg"
-    ],
     "finish-args": [
         "--device=dri",
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
         "--filesystem=xdg-pictures"
+    ],
+    "cleanup": [
+        "/include",
+        "/lib/cmake",
+        "/lib/pkgconfig",
+        "/share/man"
     ],
     "modules": [
         {
@@ -116,19 +111,12 @@
                 },
                 {
                     "type": "patch",
-                    "path": "fix-appdata.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "fix-desktop.patch"
+                    "paths": [
+                        "fix-appdata.patch",
+                        "fix-desktop.patch"
+                    ]
                 }
             ]
         }
-    ],
-    "cleanup": [
-        "/include",
-        "/lib/cmake",
-        "/lib/pkgconfig",
-        "/share/man"
     ]
 }
